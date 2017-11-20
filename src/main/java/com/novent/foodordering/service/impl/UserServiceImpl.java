@@ -23,6 +23,7 @@ import com.novent.foodordering.util.ResponseObjectData;
 @Service
 @Component
 public class UserServiceImpl implements UserService{
+	//user git hub
 	
 	@Autowired
 	private UserDao userDao;
@@ -131,12 +132,8 @@ public class UserServiceImpl implements UserService{
 				(userNameUser != null && phoneNumberUser != null && emailUser == null && userToUpdate.equals(userNameUser) && userToUpdate.equals(phoneNumberUser))||
 				(userNameUser != null && phoneNumberUser != null && emailUser != null && userToUpdate.equals(userNameUser)&& userToUpdate.equals(phoneNumberUser)&& userToUpdate.equals(emailUser));
 		
-		
-		
 		PhoneNumberUtil pnUtil = PhoneNumberUtil.getInstance();
 		String regex = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6}$"; 
-		
-		
 		
 		String phoneNumber = user.getPhoneNumber();
 		String userName = user.getUserName();
