@@ -24,6 +24,8 @@ import com.novent.foodordering.util.ResponseObjectData;
 @Component
 public class UserServiceImpl implements UserService{
 	//master 
+	//user git hub
+
 	
 	@Autowired
 	private UserDao userDao;
