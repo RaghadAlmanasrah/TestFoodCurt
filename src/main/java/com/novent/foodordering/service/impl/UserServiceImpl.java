@@ -23,6 +23,7 @@ import com.novent.foodordering.util.ResponseObjectData;
 @Service
 @Component
 public class UserServiceImpl implements UserService{
+	//master 
 	
 	@Autowired
 	private UserDao userDao;
